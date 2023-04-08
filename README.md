@@ -30,7 +30,7 @@ for example: docker tag example-program:1.0.0 server_addr.com:5000/example-progr
 ##### notes:
 - make sure the tls certificates are valid! so far, I had an issue with soft links in bind mount volumes, so I had to manually set the tls certs every 3 month. if you have the time, find a better solution. 
 - it doesn't have to be dns name, the registry server could be an IP address as well.
-- the storage volume is persistent, should be at least 20GB(I'd prefer more), because you 
+- the storage volume is persistent. plan ahead and use enough space. 
 - access management - you may want to  basic auth providers don't give you that option. to do that, read the next section:
 
 ##### setup access management - tips
